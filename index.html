@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> my webpage </title>
+    <meta charset="utf-8">
+    <meta name="descirption" content="webpage, with buttons ">
+    <meta name="keywords" content="Mths,website">
+    <meta name="author" content="Ahmad-El-khawaldeh">
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+   </head>
+   <body> 
+       
+        please enter your age :  <input type="text" id="num" />
+       <input type= "button" value= "verify" onclick="checkNum()"/>
+        </body>
+        
+        <script>
+        function checkNum() { 
+         var num = parseInt(document.getElementById("num").value);
+          let age= num;
+             
+             
+             if (age >= 17){ 
+             alert (" you can see an R movie alone ");
+             }else if ( age>=13){
+                 alert (" you can see a PG-13 movie alone ");
+             }else if (age >=5){
+                 alert("you can see a G or PG movie alone ");
+             }else {
+                 alert (" ohhh, you are too young for most things ");
+             }
+             alert( " thanks for verifying your age! enjoy your movie ");
+        }
+        </script>
+        
+       
